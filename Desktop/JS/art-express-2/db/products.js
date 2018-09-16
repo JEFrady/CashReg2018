@@ -1,11 +1,9 @@
 class ProductInventory {
     constructor() {
         this.knex = require('../knex/knex.js')
-        this._count = 4;
-        this._storage = [{name: 'Orange', price: '.33', inventory: '333', id: 1}, {name: 'Apple', price: '.25', inventory: '500', id: 2}, {name: 'Banana', price: '.10', inventory: '600', id: 3}];
     }
     all() {
-        return [... this._storage];
+        return this.knex.raw('SELECT * FROM items');
     }
     getItemById(id) {
         // console.log(id)
