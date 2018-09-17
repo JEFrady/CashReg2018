@@ -3,7 +3,8 @@ var scss = require('gulp-sass');
 var browserSync = require('browser-sync');
 
 browserSync.init({
-	proxy: `localhost:${process.env.PORT}`
+	proxy: `localhost:5000`,
+	open: false
 });
 
 // gulp.task defines a new task giving it a name and a callback function which will be called when the task is run 

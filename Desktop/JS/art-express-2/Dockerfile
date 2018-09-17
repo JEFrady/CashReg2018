@@ -10,6 +10,8 @@ WORKDIR ${app_directory}
 # ONLY copy over the package.json to install NPM packages
 COPY package.json .
 
+RUN npm install -g gulp
+
 # Install node module dependencies
 RUN npm install
 
@@ -17,4 +19,4 @@ RUN npm install
 COPY . .
 
 # Start the node application as you normally would
-CMD ["node", "app.js"]
+CMD ["node", "app.js", "gulp"]

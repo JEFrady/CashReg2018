@@ -63,7 +63,8 @@ $basefont: 16px;
 
 #fancy-hero {
     height: 100vw;
-    background: linear-gradient(80deg, $medgrey 10%, $hotpink 70%, $mutpink 100%);
+    // background: linear-gradient(80deg, $medgrey 10%, $hotpink 70%, $mutpink 100%);
+    background: #000000;
     -webkit-clip-path: polygon(0 0, 80% 0, 20% 100%, 0% 100%);
     clip-path: polygon(0 0, 80% 0, 20% 100%, 0% 100%);
 

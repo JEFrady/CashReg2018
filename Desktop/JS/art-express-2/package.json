@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "migrate": "POSTGRES_HOSTNAME=localhost POSTGRES_CONTAINER_PORT=8765 npx knex migrate:latest",
-    "seed": "POSTGRES_HOSTNAME=localhost POSTGRES_CONTAINER_PORT=8765 npx knex seed:run"
+    "seed": "POSTGRES_HOSTNAME=localhost POSTGRES_CONTAINER_PORT=8765 npx knex seed:run",
+    "dev": "nodemon app.js & gulp"
   },
   "author": "",
   "license": "ISC",

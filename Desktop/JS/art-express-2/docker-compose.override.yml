@@ -4,7 +4,7 @@ services:
     image: jefrady/art-express-2:${IMAGE_VERSION}-local
     depends_on:
       - db
-    command: ["./node_modules/.bin/nodemon", "app.js"]
+    command: ["./node_modules/.bin/nodemon", "app.js", "run", "dev"]
     container_name: art-express-cont
     volumes:
       - ".:/app/:rw"

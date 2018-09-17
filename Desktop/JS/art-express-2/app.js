@@ -7,7 +7,6 @@ const expressHbs = require('express-handlebars');
 const artRoute = require('./routes/articles.js');
 const prodRoute = require('./routes/products.js');
 
-const knex = require('./knex/knex.js');
 const methOver = require('method-override');
 
 

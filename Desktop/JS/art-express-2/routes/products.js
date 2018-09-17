@@ -96,8 +96,6 @@ const knex = require('../knex/knex.js');
             .catch( err => {
                 console.log('error', err)
             })
-        // const item = prodInv.deleteItemById(id);
-        // res.redirect('/products')
     });
 
     module.exports = prodRouter
